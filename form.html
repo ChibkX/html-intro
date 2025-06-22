@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Contact Form</title>
+    </head>
+    <body>
+        <h1>Contact Form </h1><br>
+        <form action="submit.html" method="post">
+            <h3>About You</h3>
+            <label for="name">Full Name </label>
+            <input type="text" id="name" name="name" placeholder="Enter full name" required> <br> <br>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter email address" required> <br> <br>
+            <label for="number">Phone Number</label>
+            <input type="tel" id="number" name="number" placeholder="Phone Number" required> <br> <br>
+            <h3>What track are you on?</h3>
+            <input type="radio" id="WD" name="track" value="Web development">
+            <label for="WD">Web development</label>
+            <input type="radio" id="DA" name="track" value="Data Analysis">
+            <label for="DA">Data Analysis</label>
+            <input type="radio" id="UU" name="track" value="UI/UX">
+            <label for="UU">UI/UX</label> <br><br>
+
+            <h3>Events attended since program resumption</h3>
+            <input type="checkbox" name="events" id="classes">
+            <label for="classes">I attended classes</label><br>
+            <input type="checkbox" name="events" id="THM">
+            <label for="THM">I attended Town Hall Meetings</label><br>
+            <input type="checkbox" name="events" id="TDS">
+            <label for="TDS">I attended Tech Discussion Series</label><br><br>
+
+            <h3>Prefered Class Time</h3>
+            <label for="period">when will you prefer to have your classes?</label>
+            <select name="period" id="period">
+                <option value="first period">6pm to 8pm</option>
+                <option value="second period">8pm to 10pm</option>
+                <option value="third period">10pm to 12am</option>
+            </select>
+
+            <h3>Describe your experience so far</h3>
+            <label for="comments">Experience so far</label>
+            <textarea name="comments" id="comments" rows="5" placeholder="Share your story"></textarea><br><br>
+            
+            <input type="submit" value="Submit">
+
+        </form>
+    </body>
+</html>
